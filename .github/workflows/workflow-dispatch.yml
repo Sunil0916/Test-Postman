@@ -1,0 +1,16 @@
+name: Manual Trigger
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        type: text
+        description: 'Person to greet'
+        default: 'User Name'
+        required: true
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Testing API EndPoints
+    - echo: Hello World!!!!
