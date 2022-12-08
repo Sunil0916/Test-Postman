@@ -9,8 +9,9 @@ on:
         default: 'User Name'
         required: true
 jobs:
-  greet:
+  printInputs:
     runs-on: ubuntu-latest
     steps:
-    - name: Testing API EndPoints
-    - run: echo "Hello World!!!!"
+    - run: |
+        echo "Hello"
+        echo " World" 
